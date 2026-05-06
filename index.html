@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>勉強合宿2026</title>
+<title>まなび島 勉強合宿2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -24,23 +24,24 @@
     font-family: 'Noto Sans JP', sans-serif;
     color: var(--navy);
     min-height: 100vh;
+    font-size: 15px;
   }
 
   .page {
     max-width: 720px;
     margin: 0 auto;
-    padding: 40px 24px 60px;
+    padding: 12px 12px 48px;
   }
 
   /* ── ヘッダー ── */
   .header {
     text-align: center;
-    padding: 48px 24px 36px;
+    padding: 28px 16px 24px;
     background: var(--navy);
-    border-radius: 16px;
+    border-radius: 14px;
     position: relative;
     overflow: hidden;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
   }
   .header::before {
     content: '';
@@ -66,55 +67,56 @@
     font-family: 'Noto Serif JP', serif;
     font-weight: 700;
     font-size: 11px;
-    letter-spacing: 0.2em;
-    padding: 4px 16px;
+    letter-spacing: 0.15em;
+    padding: 4px 14px;
     border-radius: 20px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     position: relative; z-index: 1;
   }
 
   .title-main {
     font-family: 'Noto Serif JP', serif;
     font-weight: 900;
-    font-size: 42px;
+    font-size: 40px;
     color: var(--white);
     line-height: 1.1;
     letter-spacing: 0.05em;
     position: relative; z-index: 1;
   }
   .title-sub {
-    font-size: 16px;
+    font-size: 13px;
     color: var(--sky);
-    margin-top: 10px;
-    letter-spacing: 0.15em;
+    margin-top: 8px;
+    letter-spacing: 0.1em;
     position: relative; z-index: 1;
   }
   .date-badge {
-    margin-top: 24px;
+    margin-top: 16px;
     display: inline-block;
     background: rgba(255,255,255,0.08);
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 40px;
-    padding: 10px 28px;
+    padding: 8px 20px;
     color: var(--white);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.05em;
     position: relative; z-index: 1;
+    white-space: nowrap;
   }
 
   /* ── コンセプト ── */
   .concept {
     background: var(--white);
     border-radius: 12px;
-    padding: 28px 28px;
-    margin-bottom: 24px;
-    border-left: 5px solid var(--gold);
+    padding: 18px 16px;
+    margin-bottom: 16px;
+    border-left: 4px solid var(--gold);
   }
   .concept p {
     font-family: 'Noto Serif JP', serif;
-    font-size: 15px;
-    line-height: 2;
+    font-size: 14px;
+    line-height: 1.9;
     color: var(--navy);
   }
   .concept strong {
@@ -125,12 +127,11 @@
   /* ── セクションタイトル ── */
   .section-title {
     font-family: 'Noto Serif JP', serif;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.2em;
     color: var(--blue);
-    text-transform: uppercase;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -144,22 +145,23 @@
 
   /* ── スケジュール ── */
   .schedule-wrap {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
   }
   .day-block {
     background: var(--white);
     border-radius: 12px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     overflow: hidden;
-    box-shadow: 0 2px 12px rgba(26,39,68,0.06);
+    box-shadow: 0 2px 10px rgba(26,39,68,0.06);
   }
   .day-header {
     background: var(--navy);
     color: var(--white);
-    padding: 12px 20px;
+    padding: 10px 14px;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
+    flex-wrap: wrap;
   }
   .day-num {
     background: var(--gold);
@@ -168,34 +170,37 @@
     font-size: 11px;
     padding: 3px 10px;
     border-radius: 20px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
   }
   .day-label {
     font-weight: 700;
-    font-size: 15px;
-    letter-spacing: 0.05em;
+    font-size: 14px;
+    letter-spacing: 0.03em;
   }
   .day-body {
-    padding: 16px 20px;
+    padding: 10px 14px;
   }
   .time-row {
     display: flex;
-    gap: 12px;
-    padding: 7px 0;
+    gap: 10px;
+    padding: 8px 0;
     border-bottom: 1px solid var(--light);
     align-items: flex-start;
-    font-size: 13.5px;
   }
   .time-row:last-child { border-bottom: none; }
   .time {
-    min-width: 110px;
+    min-width: 90px;
+    width: 90px;
     color: var(--gray);
-    font-size: 12px;
+    font-size: 11.5px;
     padding-top: 2px;
     font-variant-numeric: tabular-nums;
+    flex-shrink: 0;
   }
   .event {
     flex: 1;
+    font-size: 14px;
     line-height: 1.5;
   }
   .event.study {
@@ -211,32 +216,32 @@
   .info-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    margin-bottom: 24px;
+    gap: 12px;
+    margin-bottom: 16px;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 480px) {
     .info-grid { grid-template-columns: 1fr; }
   }
   .info-card {
     background: var(--white);
     border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 2px 12px rgba(26,39,68,0.06);
+    padding: 16px;
+    box-shadow: 0 2px 10px rgba(26,39,68,0.06);
   }
   .info-card.full { grid-column: 1 / -1; }
   .info-card h3 {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.15em;
     color: var(--blue);
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     padding-bottom: 8px;
     border-bottom: 1px solid var(--light);
   }
   .info-card ul {
     list-style: none;
-    font-size: 13.5px;
-    line-height: 2;
+    font-size: 14px;
+    line-height: 1.9;
   }
   .info-card ul li::before {
     content: '▸ ';
@@ -245,7 +250,7 @@
   }
   .fee-big {
     font-family: 'Noto Serif JP', serif;
-    font-size: 36px;
+    font-size: 34px;
     font-weight: 900;
     color: var(--navy);
     line-height: 1;
@@ -262,12 +267,12 @@
     background: linear-gradient(135deg, #fff8ec, #fff);
     border: 1px solid #f0dbb0;
     border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 24px;
+    padding: 16px;
+    margin-bottom: 16px;
   }
   .cooking-card p {
-    font-size: 13.5px;
-    line-height: 1.9;
+    font-size: 14px;
+    line-height: 1.8;
     color: var(--navy);
   }
   .cooking-card .role {
@@ -284,24 +289,24 @@
   /* ── 参加条件 ── */
   .appeal {
     background: var(--navy);
-    border-radius: 16px;
-    padding: 32px 28px;
-    margin-bottom: 24px;
+    border-radius: 14px;
+    padding: 24px 18px;
+    margin-bottom: 16px;
     color: var(--white);
     text-align: center;
   }
   .appeal p {
     font-family: 'Noto Serif JP', serif;
-    font-size: 15px;
-    line-height: 2.2;
+    font-size: 14px;
+    line-height: 2;
     color: rgba(255,255,255,0.88);
   }
   .appeal strong {
     color: var(--gold);
     display: block;
-    font-size: 19px;
-    margin-top: 12px;
-    line-height: 1.7;
+    font-size: 17px;
+    margin-top: 10px;
+    line-height: 1.6;
   }
 
   /* ── 締切・定員 ── */
@@ -309,17 +314,18 @@
     background: #fff0f0;
     border: 2px solid #e05050;
     border-radius: 12px;
-    padding: 20px 24px;
-    margin-bottom: 28px;
+    padding: 16px;
+    margin-bottom: 24px;
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+    gap: 16px;
     flex-wrap: wrap;
   }
   .deadline-item { text-align: center; }
   .deadline-item .num {
     font-family: 'Noto Serif JP', serif;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 900;
     color: #e05050;
     line-height: 1;
@@ -332,15 +338,15 @@
   }
   .deadline-div {
     width: 1px;
-    height: 50px;
+    height: 44px;
     background: #e0b0b0;
   }
   .deadline-note {
     flex: 1;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.8;
     color: #8b3030;
-    min-width: 160px;
+    min-width: 140px;
   }
 
   /* ── フッター ── */
@@ -365,16 +371,14 @@
   <div class="header">
     <div class="label">まなび島 特別企画 2026</div>
     <div class="title-main">勉強合宿</div>
-    <div class="title-sub">勉強に全集中する2泊3日合宿</div>
+    <div class="title-sub">2泊3日・全力集中のスタディキャンプ</div>
     <div class="date-badge">6月19日（金）〜 21日（日）</div>
   </div>
 
   <!-- コンセプト -->
   <div class="concept">
     <p>
-      ほぼ<strong>勉強だけ</strong>。規則正しい生活。自分で計画・実行・振返り。コーチが伴走。<br>
-      期末テストへの勉強、受験のための勉強、基礎力をつける為の勉強<br>
-      <strong>2泊3日で全10時間</strong><br>
+      ほぼ<strong>勉強だけ</strong>。規則正しい生活。自分で立てた計画を、仲間と一緒に実行する2泊3日。期末テストへの本気の準備と、<strong>2泊3日で全10時間以上の勉強</strong>を積み重ねる。一生忘れられない思い出も、きっとできる。
     </p>
   </div>
 
@@ -390,15 +394,15 @@
       </div>
       <div class="day-body">
         <div class="time-row">
-          <span class="time">19:30までに</span>
+          <span class="time">〜19:00</span>
           <span class="event">各自自宅で夕食を済ませてチェックイン（ゆいランド）</span>
         </div>
         <div class="time-row">
-          <span class="time">20:00 〜 20:50</span>
+          <span class="time">20:00〜21:00</span>
           <span class="event study">勉強①</span>
         </div>
         <div class="time-row">
-          <span class="time">21:00 〜 21:30</span>
+          <span class="time">21:00〜21:30</span>
           <span class="event review">振り返り・明日の計画</span>
         </div>
         <div class="time-row">
@@ -420,19 +424,19 @@
           <span class="event activity">起床・ラジオ体操・朝食準備・朝食</span>
         </div>
         <div class="time-row">
-          <span class="time">8:00 〜 8:50</span>
+          <span class="time">8:00〜8:50</span>
           <span class="event study">勉強②</span>
         </div>
         <div class="time-row">
-          <span class="time">9:00 〜 9:50</span>
+          <span class="time">9:00〜9:50</span>
           <span class="event study">勉強③</span>
         </div>
         <div class="time-row">
-          <span class="time">10:00 〜 10:50</span>
+          <span class="time">10:00〜10:50</span>
           <span class="event study">勉強④</span>
         </div>
         <div class="time-row">
-          <span class="time">11:00 〜 11:30</span>
+          <span class="time">11:00〜11:30</span>
           <span class="event review">午前振り返り・午後の計画</span>
         </div>
         <div class="time-row">
@@ -440,23 +444,23 @@
           <span class="event meal">昼食</span>
         </div>
         <div class="time-row">
-          <span class="time">13:00 〜 13:30</span>
+          <span class="time">13:00〜13:30</span>
           <span class="event activity">ランニング・運動</span>
         </div>
         <div class="time-row">
-          <span class="time">13:30 〜 14:20</span>
+          <span class="time">13:30〜14:20</span>
           <span class="event study">勉強⑤</span>
         </div>
         <div class="time-row">
-          <span class="time">14:30 〜 15:20</span>
+          <span class="time">14:30〜15:20</span>
           <span class="event study">勉強⑥</span>
         </div>
         <div class="time-row">
-          <span class="time">15:30 〜 16:20</span>
+          <span class="time">15:30〜16:20</span>
           <span class="event study">勉強⑦</span>
         </div>
         <div class="time-row">
-          <span class="time">16:30 〜 17:00</span>
+          <span class="time">16:30〜17:00</span>
           <span class="event review">振り返り・夜の計画</span>
         </div>
         <div class="time-row">
@@ -464,11 +468,11 @@
           <span class="event meal">休憩・夕食・入浴</span>
         </div>
         <div class="time-row">
-          <span class="time">20:00 〜 20:50</span>
+          <span class="time">20:00〜20:50</span>
           <span class="event study">勉強⑧</span>
         </div>
         <div class="time-row">
-          <span class="time">21:00 〜 21:30</span>
+          <span class="time">21:00〜21:30</span>
           <span class="event review">本日の振り返り・明日の計画</span>
         </div>
         <div class="time-row">
@@ -487,18 +491,18 @@
       <div class="day-body">
         <div class="time-row">
           <span class="time">6:00</span>
-          <span class="event activity">起床・ラジオ体操・みんなで朝食準備・朝食</span>
+          <span class="event activity">起床・ラジオ体操・朝食準備・朝食</span>
         </div>
         <div class="time-row">
-          <span class="time">8:00 〜 8:50</span>
+          <span class="time">8:00〜8:50</span>
           <span class="event study">勉強⑨</span>
         </div>
         <div class="time-row">
-          <span class="time">9:00 〜 9:50</span>
+          <span class="time">9:00〜9:50</span>
           <span class="event study">勉強⑩</span>
         </div>
         <div class="time-row">
-          <span class="time">10:00 〜 10:30</span>
+          <span class="time">10:00〜10:30</span>
           <span class="event review">2泊3日の総振り返り</span>
         </div>
         <div class="time-row">
@@ -518,7 +522,7 @@
       <div class="fee-big">¥10,000</div>
       <div class="fee-note">
         宿泊費・食事代含む<br>
-        ※食事は20日の朝・昼・夜、21日の朝食（計4食）を提供
+        ※20日の朝・昼・夜、21日の朝食（計4食）提供
       </div>
     </div>
 
@@ -527,7 +531,7 @@
       <ul>
         <li>会場：ゆいランド</li>
         <li>定員：先着 <strong>5名</strong></li>
-        <li>申込締切：<strong>5月31日（土）</strong></li>
+        <li>締切：<strong>5月31日（土）</strong></li>
       </ul>
     </div>
 
@@ -546,24 +550,23 @@
   </div>
 
   <!-- 自炊 -->
-  <div class="section-title">ちょっとだけ自炊にもチャレンジします！</div>
+  <div class="section-title">朝食は自炊にチャレンジ！</div>
   <div class="cooking-card">
     <p>
       朝ごはんはみんなで力を合わせて作ります。コーチが下準備をサポートします。<br><br>
       役割を分担して取り組みます：<br>
-      <span class="role">ごはん・お味噌汁 班</span>
-      <span class="role">おかず・副菜 班</span><br><br>
+      <span class="role">ごはん・お味噌汁 班長</span>
+      <span class="role">おかず・副菜 班長</span><br><br>
       みんなで食べるごはんは、また格別です。
     </p>
   </div>
 
   <!-- 事前計画 -->
   <div class="section-title">合宿前にやること</div>
-  <div class="info-card" style="margin-bottom:24px;">
+  <div class="info-card" style="margin-bottom:16px;">
     <h3>10時間の勉強計画を事前に立てる</h3>
-    <p style="font-size:13.5px; line-height:1.9;">
-      合宿中の勉強コマ（10時間分）で何を勉強するか、事前に自分で計画を立ててもらいます。<br>
-      合宿で達成する目標を明確にしてから臨みましょう。
+    <p style="font-size:14px; line-height:1.8;">
+      合宿中の勉強コマ（10時間分）で何をどこまで勉強するか、事前に自分で計画を立ててもらいます。期末テストに向けて、目標を明確にしてから臨みましょう。
     </p>
   </div>
 
@@ -574,11 +577,7 @@
       仲間と目標を応援しあって、頑張ってみたい。<br>
       そう思う人に来てほしい。
     </p>
-    <p>
-      対象：中学生・高校生<br>
-      まなび島　塾生のみ参加可<br>
-    </p>
-    <strong>あなたの本領発揮を、待ってます。</strong>
+    <strong>あなたの本気を、島で解き放とう。</strong>
   </div>
 
   <!-- 締切・定員 -->
@@ -595,7 +594,7 @@
     <div class="deadline-div"></div>
     <div class="deadline-note">
       定員に達し次第、受付を締め切ります。<br>
-      参加希望の方はお早めにお申し込みください。
+      お早めにお申し込みください。
     </div>
   </div>
 
